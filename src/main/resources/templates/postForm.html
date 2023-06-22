@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>新規投稿</title>
+</head>
+<body>
+<h1>新規投稿ページ</h1>
+<form action="#" th:action="@{/posts}" th:method="post" th:object="${postForm}">
+  <input type="text" id="summaryInput" th:field="*{memo}">
+  <button type="submit">作成</button>
+</form>
+</body>
+</html>
